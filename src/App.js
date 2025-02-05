@@ -9,7 +9,8 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path="/m5b8-post-management-redux"  element={<Post/>}/>
+                <Route path="/"  element={<Post/>}/>
+                <Route path="/m5b8-post-management-redux/"  element={<Post/>}/>
                 <Route path="/m5b8-post-management-redux/add"  element={<NewPost/>}/>
                 <Route path="/m5b8-post-management-redux/edit"  element={<EditPost/>}/>
             </Routes>
