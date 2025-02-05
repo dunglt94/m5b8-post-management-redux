@@ -9,6 +9,7 @@ function App() {
     return (
         <>
             <Routes>
+                <Route path="/" exact element={<Post/>}/>
                 <Route path="/m5b8-post-management-redux/" exact element={<Post/>}/>
                 <Route path="/m5b8-post-management-redux/add" exact element={<NewPost/>}/>
                 <Route path="/m5b8-post-management-redux/edit" exact element={<EditPost/>}/>
