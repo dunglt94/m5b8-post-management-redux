@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/m5b8-post-management-redux/static/css/main.ca67ef22.css",
+    "main.js": "/m5b8-post-management-redux/static/js/main.94f0b0d1.js",
+    "static/js/488.e20febde.chunk.js": "/m5b8-post-management-redux/static/js/488.e20febde.chunk.js",
+    "index.html": "/m5b8-post-management-redux/index.html",
+    "main.ca67ef22.css.map": "/m5b8-post-management-redux/static/css/main.ca67ef22.css.map",
+    "main.94f0b0d1.js.map": "/m5b8-post-management-redux/static/js/main.94f0b0d1.js.map",
+    "488.e20febde.chunk.js.map": "/m5b8-post-management-redux/static/js/488.e20febde.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca67ef22.css",
+    "static/js/main.94f0b0d1.js"
+  ]
+}
