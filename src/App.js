@@ -8,7 +8,7 @@ import EditPost from "./components/EditPost";
 function App() {
     return (
         <>
-            <HashRouter basename="m5b8-post-management-redux">
+            <HashRouter basename="/m5b8-post-management-redux">
                 <Routes>
                     <Route path="/" element={<Post/>}/>
                     <Route path="/add" element={<NewPost/>}/>
