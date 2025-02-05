@@ -12,7 +12,6 @@ const NewPost = () => {
         setNewPost({
             ...newPost, [e.target.name]: e.target.value
         })
-        console.log(newPost);
     }
 
     const handleAdd = () => {

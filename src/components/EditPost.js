@@ -1,21 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {editPosts, fetchPost} from "../redux/action";
+import {editPosts} from "../redux/action";
 import {useLocation, useNavigate} from "react-router-dom";
 
-const NewPost = () => {
+const EditPost = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const location = useLocation();
     const [post, setPost] = useState({ title: "", body: "" });
 
-    const postFromStore = useSelector((state) => state.post);
-
     const postId = location.state.postId;
-
-    useEffect(() => {
-        dispatch(fetchPost(postId));
-    }, [dispatch,postId])
+    const postFromStore = useSelector((state) => state.posts.find((p) => p.id === postId));
 
     useEffect(() => {
         if (postFromStore) {
@@ -73,4 +68,4 @@ const NewPost = () => {
     )
 }
 
-export default NewPost;
+export default EditPost;

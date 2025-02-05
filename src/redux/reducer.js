@@ -1,4 +1,4 @@
-import {ADD_POST_SUCCESS, EDIT_POST_SUCCESS, FETCH_POST_SUCCESS, FETCH_POSTS_SUCCESS} from "./action";
+import {ADD_POST_SUCCESS, EDIT_POST_SUCCESS, FETCH_POSTS_SUCCESS} from "./action";
 
 const initialState = {
     posts: [],
@@ -10,8 +10,6 @@ const rootReducer = (state = initialState, action) => {
             return {...state, posts: action.payload};
         case ADD_POST_SUCCESS:
             return {...state, posts: [...state.posts, action.payload]};
-        case FETCH_POST_SUCCESS:
-            return {...state, post: action.payload};
         case EDIT_POST_SUCCESS:
             return {...state,
                 posts: state.posts.map((post) =>
